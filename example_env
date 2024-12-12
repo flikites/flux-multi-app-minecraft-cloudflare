@@ -1,0 +1,6 @@
+DNS_SERVER_ADDRESS=https://api.cloudflare.com/client/v4
+DNS_SERVER_API_KEY=your-cloudflare-zone-api-key
+DNS_SERVER_ACCOUNT_ID=your-cloudflare-account-id
+DOMAIN_NAME=gameonflux.com
+CRON_SECONDS=60
+APP_FILTER=*mine
