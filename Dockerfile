@@ -3,7 +3,7 @@ FROM node:alpine
 WORKDIR /usr/src/app
 COPY package*.json ./
 
-RUN  mkdir -p /root/cluster && npm install --production
+RUN npm install --production
 
 COPY . .
 
