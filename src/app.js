@@ -25,7 +25,7 @@ async function fetchHealthyIPs(appName) {
         for (const { ip } of allIPs) {
             const cleanedIP = ip.split(":")[0]; // Remove port if present
             try {
-                if (await gamedig.query({ type: "minecraft", host: cleanedIP })) {
+                if (await gamedig.query({ type: "mbe", host: cleanedIP })) {
                     console.log(`[${appName}] IP ${cleanedIP} passed the health check.`);
                     healthyIPs.push(cleanedIP);
                 } else {
